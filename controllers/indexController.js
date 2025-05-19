@@ -13,7 +13,7 @@ const db = require('../database/models');
         home: (req, res) => {
             db.Product.findAll()
                 .then((products) => {
-                    return res.render('index', { products });
+                    return res.render('index.ejs', { products });
                 })
                 .catch((error) => {
                     console.log(error);
@@ -24,7 +24,7 @@ const db = require('../database/models');
         detailProduct: (req, res) => {
             db.Product.findByPk(req.params.id)
                 .then((product) => {
-                    return res.render('detailProduct', { product });
+                    return res.render('detailProduct.ejs', { product });
                 })
                 .catch((error) => {
                     console.log(error);
