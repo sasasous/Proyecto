@@ -1,0 +1,71 @@
+/* CSS Document */
+body {
+  background-color: #ffffff;
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#enotroplano {
+    width: 860px;
+    height: 620px;
+    display:block;
+    margin:auto;
+}
+
+.ilustraciones {
+    font-family: "Jockey One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-size: 96px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.bloque {
+    width: 500px;
+    height: 750px;
+    background-color: #F8F6E7;
+    display:block;
+    margin:auto;
+}
+
+.dibujo {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 50px;
+    left: 75px;
+}
+
+.nombre {
+    font-size: 36px;
+    position: relative;
+    top: 50px;
+    left: 75px;
+}
+
+.tamaño {
+    font-size: 32px;
+    position: relative;
+    left: 75px;
+}
+
+.nav-footer {
+  background-color: #F8F6E7;
+  height: 100px;
+}
+
+.redes {
+    color: black;
+    text-decoration-line: none;
+}
