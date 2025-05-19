@@ -6,19 +6,19 @@ const { config } = require("../../.sequelizerc");
     const cols = {
         
         id: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER (100)
         },
         name: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING (300)
         },
         price: {
-            type: DataTypes.DECIMAL
+            type: DataTypes.DECIMAL (2)
         },
         image: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING (300)
         },
         category: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING (4)
         }
 
     };
@@ -27,6 +27,6 @@ const { config } = require("../../.sequelizerc");
         timestamps: false,
     }
 
-const product = Sequelize.define(alias, cols, config);
-    return Product;
+const product = sequelize.define(alias, cols, config);
+    return product;
 }
