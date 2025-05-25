@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const sequelize = require('./database/models')
 
 /* Zona de rutas */
 var indexRouter = require('./routes/index');
@@ -19,12 +18,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-(()=>{
-  console.log('Sequelize');
-  
-  sequelize.sequelize.sync({force:true})
-})()
 
 /* Rutas que recibe el ruteador */
 app.use('/', indexRouter);

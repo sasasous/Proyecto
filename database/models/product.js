@@ -5,6 +5,9 @@ const { config } = require("../../.sequelizerc");
     const alias = "Product";
     const cols = {
         
+        id: {
+            type: DataTypes.INTEGER (100)
+        },
         name: {
             type: DataTypes.STRING (300)
         },

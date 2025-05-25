@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "sofia752.",
     "database": "sous_market",
-    "host": "127.0.0.1",
+    "host": "127.0.0.1:3306",
     "dialect": "mysql"
   },
   "test": {
