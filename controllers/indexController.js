@@ -1,7 +1,8 @@
 const db = require("../database/models");
 
 module.exports = {
-  home: (req, res) => {
+
+   home: (req, res) => {
     db.Product.findAll()
       .then((products) => {
         return res.render("index.ejs", { products });
@@ -20,7 +21,7 @@ module.exports = {
         } else {
           res.send("producto no encontrado");
         }
-      })
+        })
       .catch((error) => {
         console.log(error);
         return res.status(500).send("Error");
