@@ -1,31 +1,36 @@
-
 {
-  "name": "sous",
+  "name": "proyecto",
   "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  },
   "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/sasasous/Proyecto#readme",
-  "bugs": {
-    "url": "https://github.com/sasasous/Proyecto/issues"
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sasasous/Proyecto.git"
   },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "author": "sous",
   "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "dev": "yourDevCommand",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/sasasous/Proyecto/issues"
   },
-  "dependencies": {
-    "development": "^0.0.6",
-    "mysql2": "^3.14.1",
-    "sequelize": "^6.37.7",
-    "sequelize-cli": "^6.6.3",
-    "serve": "^14.2.4"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/sasasous/Proyecto#readme"
 }

@@ -1,14 +1,18 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const sequelize = require('./database/models')
 
 /* Zona de rutas */
 var indexRouter = require('./routes/index');
 
-var app = express();
+const app = express();
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
